@@ -22,4 +22,8 @@ add_executable(doorIdentifier src/doorIdentifier.cpp)
 target_link_libraries(doorIdentifier ${catkin_LIBRARIES})
 add_dependencies(doorIdentifier beginner_tutorials_generate_messages_cpp)
 
+catkin_install_python(PROGRAMS scripts/pyTalker.py scripts/pyListener.py 
+    DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
+
 # %EndTag(FULLTEXT)%
