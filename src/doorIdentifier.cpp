@@ -45,7 +45,7 @@ class PublisherSubscriber {
 
             for (int i = 1; i < sizeof(voids); i++) {
                 float voidSize = getVoidSize(voids[i], ranges);
-                if(voidSize >= minimumDoorSize){
+                if(voidSize <= minimumDoorSize){
                     // Then we can consider it as a door and add it to the returned array
                 }
             }
